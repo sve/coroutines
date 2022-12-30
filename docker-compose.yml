@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  php:
+    build:
+      context: ./.docker/php
+      dockerfile: Dockerfile
+      args:
+        - TAG=8.2.0-cli
+    working_dir: /app
+    entrypoint: tail -f /dev/null
+    volumes:
+      - ./:/app
+    networks:
+      - default
+
+networks:
+  default:

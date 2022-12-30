@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/dependency-injection": "dev-master",
+        "symfony/config": "^6.2",
+        "monolog/monolog": "^3.2"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sve/dependency-injection.git"
+        }
+    ]
+}
